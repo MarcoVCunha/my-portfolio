@@ -37,12 +37,13 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center max-w-5xl mx-auto"
       >
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconsVariants(2.5)}
+          className="p-4"
         >
           <RiReactjsLine className="text-8xl text-cyan-400" />
         </motion.div>
