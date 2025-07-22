@@ -7,24 +7,34 @@ import {
 } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
+// Animação vertical (para cima e para baixo)
 const iconsVariants = (duration) => ({
-  initial: { y: 10 },
+  initial: { y: 0 },
   animate: {
-    y: [10, -10],
+    y: [0, -10, 0], // sobe 10px e volta
     transition: {
-      duration: duration,
-      ease: "linear",
+      duration,
+      ease: "easeInOut",
       repeat: Infinity,
-      repeatType: "reverse",
     },
   },
 });
 
+const icons = [
+  { Icon: RiReactjsLine, color: "text-cyan-400", duration: 2.5 },
+  { Icon: DiJavascript1, color: "text-yellow-300", duration: 3.5 },
+  { Icon: DiNodejsSmall, color: "text-green-500", duration: 5 },
+  { Icon: DiJava, color: "text-red-900", duration: 2 },
+  { Icon: SiMongodb, color: "text-green-700", duration: 6 },
+  { Icon: DiMysql, color: "text-blue-900", duration: 4 },
+  { Icon: DiGit, color: "text-orange-700", duration: 3 },
+];
+
 const Technologies = () => {
   return (
-    <div className="pb-24 ">
+    <div className="pb-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -33,68 +43,24 @@ const Technologies = () => {
       >
         Tecnologias
       </motion.h2>
+
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center max-w-5xl mx-auto"
+        className="flex flex-wrap justify-center items-center gap-10 max-w-5xl mx-auto"
       >
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(2.5)}
-          className="p-4"
-        >
-          <RiReactjsLine className="text-8xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(3.5)}
-          className="p-4"
-        >
-          <DiJavascript1 className="text-8xl text-yellow-300" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(5)}
-          className="p-4"
-        >
-          <DiNodejsSmall className="text-8xl text-green-500" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(2)}
-          className="p-4"
-        >
-          <DiJava className="text-8xl text-red-900" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(6)}
-          className="p-4"
-        >
-          <SiMongodb className="text-8xl text-green-700" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(4)}
-          className="p-4"
-        >
-          <DiMysql className="text-8xl text-blue-900" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconsVariants(3)}
-          className="p-4"
-        >
-          <DiGit className="text-8xl text-orange-700" />
-        </motion.div>
+        {icons.map(({ Icon, color, duration }, index) => (
+          <motion.div
+            key={index}
+            initial="initial"
+            animate="animate"
+            variants={iconsVariants(duration)}
+            className="text-8xl"
+          >
+            <Icon className={color} />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );
