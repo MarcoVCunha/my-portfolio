@@ -11,18 +11,19 @@ export const EXPERIENCES = [
     year: "",
     role: "",
     company: "",
-    description: `Estudante em busca da primeira oportunidade de estágio na área de TI para mostrar meus conhecimentos e evoluir juntamente com a empresa.`,
+    description: `Estudante em busca da primeira oportunidade de estágio na área de TI para mostrar meus conhecimentos e evoluir.`,
     technologies: [],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "ReactGRam Website",
+    title: "ReactGram Website",
     image: project1,
     description:
       "Projeto de uma rede social. O sistema inclui funcionalidades como autenticação de usuários, criação de postagens, interações sociais (curtir, comentar) e integração com APIs.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    git: "https://github.com/MarcoVCunha/Rede-social",
   },
   {
     title: "MiniBlog Website",
@@ -30,6 +31,7 @@ export const PROJECTS = [
     description:
       "Projeto de um blog. O sistema inclui funcionalidades como autenticação de usuários, criação de postagens, edição de postagem, página do usuário, Home, DashBoard e pesquisa.",
     technologies: ["HTML", "CSS", "React", "Firebase"],
+    git: "https://github.com/MarcoVCunha/Blog",
   },
   {
     title: "Gestão de academia",
@@ -37,6 +39,7 @@ export const PROJECTS = [
     description:
       "Projeto acadêmico de gestão de uma academia. O sistema inclui funcionalidades como autenticação (para alunos e instrutores) criar (apenas instrutores podem acessar), editar (apenas instrutores podem acessar), consultar e excluir (apenas instrutores podem) treinos. ",
     technologies: ["Java", "NetBeans", "mySQL"],
+    git: "https://github.com/MarcoVCunha/Gestao-de-academia-",
   },
 ];
 

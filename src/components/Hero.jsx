@@ -1,6 +1,7 @@
 import profilePic from "../assets/profileM.png";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
+import "./Hero.css";
 
 const hidden = {
   opacity: 0,
@@ -27,19 +28,18 @@ const childVariants = {
 const Hero = () => {
   return (
     <div className="pb-4 lg:mb-36">
-      <div className="flex flex-wrap lg:flex-row-reverse">
+      <div className="flex flex-wrap lg:flex-row-reverse lg:px-35 "> 
         <div className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:p-8">
-            <motion.img
-              src={profilePic}
-              alt="Marco Vinicius Cunha"
-              className="border border-stone-800 rounded-3xl"
-              width={500}
-              height={500}
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
-            />
+          <div className="relative w-[420px] h-[420px] flex items-center justify-center group lg:ml-20">
+            <div className="w-[370px] h-[370px] rounded-3xl relative overflow-hidden ">
+              <img
+                src={profilePic}
+                alt="Marco Vinicius Cunha"
+                className="absolute inset-0 z-0 animate-wave-border border-2 border-stone-400 bg-transparent"
+                height={400}
+                width={400}
+              />
+            </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2">
