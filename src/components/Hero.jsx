@@ -30,12 +30,12 @@ const Hero = () => {
     <div className="pb-4 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse lg:px-35 "> 
         <div className="w-full lg:w-1/2">
-          <div className="relative w-[420px] h-[420px] flex items-center justify-center group lg:ml-20">
+          <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:w-[420px] h-auto aspect-square flex items-center justify-center group mx-auto">
             <div className="w-[370px] h-[370px] rounded-3xl relative overflow-hidden ">
               <img
                 src={profilePic}
                 alt="Marco Vinicius Cunha"
-                className="absolute inset-0 z-0 animate-wave-border border-2 border-stone-400 bg-transparent"
+                className="absolute inset-0 z-0 animate-wave-border border-2 border-stone-400 bg-transparent w-full h-full object-cover"
                 height={400}
                 width={400}
               />
