@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/reactgram.png";
 import project2 from "../assets/projects/miniblog.png";
 import project3 from "../assets/projects/gym.png";
+import project4 from "../assets/projects/cinelib.png";
 
 export const HERO_CONTENT = `Sou um desenvolvedor full stack apaixonado por tecnologia e busco adquirir mais conhecimento cada dia. Aprimoro cada dia mais minhas habilidades em tecnologias front-end, como React, assim como em tecnologias back-end, como Node.js, java, MySQL e MongoDB. Meu objetivo é evoluir cada dia mais para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem uma boa experiência aos usuários.`;
 
@@ -40,6 +41,15 @@ export const PROJECTS = [
       "Projeto acadêmico de gestão de uma academia. O sistema inclui funcionalidades como autenticação (para alunos e instrutores) criar (apenas instrutores podem acessar), editar (apenas instrutores podem acessar), consultar e excluir (apenas instrutores podem) treinos. ",
     technologies: ["Java", "NetBeans", "mySQL"],
     git: "https://github.com/MarcoVCunha/Gestao-de-academia-",
+  },
+  {
+    title: "Biblioteca de filmes",
+    image: project4,
+    description:
+      "Projeto de uma biblioteca de filmes usando a api TMDB e react.js. Funcionalidades de pesquisa e ver detalhes de um filme.",
+    technologies: ["React", "CSS"],
+    git: "https://github.com/MarcoVCunha/MovieLib",
+    link: "https://cinelib-three.vercel.app",
   },
 ];
 

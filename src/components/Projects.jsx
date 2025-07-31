@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ const Projects = () => {
             >
               <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
               <p className="mb-4 text-stone-400">{project.description}</p>
-              <div className="m-4 text-2xl">
+              <div className="flex items-center gap-x-4 text-2xl m-4">
                 <a
                   href={project.git}
                   target="_blank"
@@ -46,7 +46,17 @@ const Projects = () => {
                   aria-label="GitHub"
                 >
                   <FaGithub />
-                </a>
+                </a>{" "}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Link"
+                  >
+                    <FaLink />
+                  </a>
+                )}
               </div>
               {project.technologies.map((tech, index) => {
                 return (
