@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/reactgram.png";
 import project2 from "../assets/projects/miniblog.png";
 import project3 from "../assets/projects/gym.png";
-import project4 from "../assets/projects/cinelib.png";
+import project4 from "../assets/projects/cine.png";
 
 export const HERO_CONTENT = `Sou um desenvolvedor full stack apaixonado por tecnologia e busco adquirir mais conhecimento cada dia. Aprimoro cada dia mais minhas habilidades em tecnologias front-end, como React, assim como em tecnologias back-end, como Node.js, java, MySQL e MongoDB. Meu objetivo é evoluir cada dia mais para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem uma boa experiência aos usuários.`;
 
