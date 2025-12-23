@@ -2,10 +2,11 @@ import project1 from "../assets/projects/reactgram.png";
 import project2 from "../assets/projects/miniblog.png";
 import project3 from "../assets/projects/gym.png";
 import project4 from "../assets/projects/cine.png";
+import project5 from "../assets/projects/jm.png";
 
-export const HERO_CONTENT = `Sou um desenvolvedor full stack apaixonado por tecnologia e busco adquirir mais conhecimento cada dia. Aprimoro cada dia mais minhas habilidades em tecnologias front-end, como React, assim como em tecnologias back-end, como Node.js, java, MySQL e MongoDB. Meu objetivo é evoluir cada dia mais para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem uma boa experiência aos usuários.`;
+export const HERO_CONTENT = `Sou um desenvolvedor full stack apaixonado por tecnologia e busco adquirir mais conhecimento cada dia. Aprimoro cada dia mais minhas habilidades em tecnologias front-end, como React, assim como em tecnologias back-end, como JavaScript (foco em Node.js) e Java (foco em Spring Boot). Meu objetivo é evoluir cada dia mais para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem uma boa experiência aos usuários.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = ``;
 
 export const EXPERIENCES = [
   {
@@ -19,11 +20,21 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "JM Locações",
+    image: project5,
+    description:
+      "Projeto de conclusão de curso de um sistema de gestão de locação de veículos. A aplicação inclui login e gerenciamento de clientes, controle de locações, multas e pedágios, gestão de pagamentos, emissão de comprovantes e aplicação de boas práticas de segurança e conformidade com a LGPD.",
+    technologies: ["React", "Spring Boot", "MySQL"],
+    git: "https://github.com/MarcoViniciusCunha/PFC_SI_JMLOCACOES.git",
+    video:
+      "https://drive.google.com/file/d/1yiE0LehDyiJBIO_ob6VSzRCrrpwIZ4Gb/view?usp=drive_link",
+  },
+  {
     title: "ReactGram Website",
     image: project1,
     description:
       "Projeto de uma rede social. O sistema inclui funcionalidades como autenticação de usuários, criação de postagens, interações sociais (curtir, comentar) e integração com APIs.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["React", "Node.js", "MongoDB"],
     git: "https://github.com/MarcoVCunha/Rede-social",
   },
   {
@@ -31,7 +42,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "Projeto de um blog. O sistema inclui funcionalidades como autenticação de usuários, criação de postagens, edição de postagem, página do usuário, Home, DashBoard e pesquisa.",
-    technologies: ["HTML", "CSS", "React", "Firebase"],
+    technologies: ["React", "Firebase", "Node.js"],
     git: "https://github.com/MarcoVCunha/Blog",
   },
   {
@@ -47,14 +58,14 @@ export const PROJECTS = [
     image: project4,
     description:
       "Projeto de uma biblioteca de filmes usando a api TMDB e react.js. Funcionalidades de pesquisa e ver detalhes de um filme.",
-    technologies: ["React", "CSS"],
+    technologies: ["React"],
     git: "https://github.com/MarcoVCunha/MovieLib",
     link: "https://cinelib-three.vercel.app",
   },
 ];
 
 export const CONTACT = {
-  address: "Rua Joaquim Martins Coelho 117, Mogi das Cruzes, SP",
-  phoneNo: "+55 11 94046-3072 ",
+  address: "Mogi das Cruzes - SP",
+  phoneNo: "+55 11 97999-5695",
   email: "marcoviniciuscunha@gmail.com",
 };

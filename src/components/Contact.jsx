@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-t border-stone-900 pb-20">
+    <section id="contact" className="border-t border-stone-900 pb-20">
       <motion.h2
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ const Contact = () => {
           {CONTACT.email}
         </motion.a>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ import {
   DiNodejsSmall,
 } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiSpringboot } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // Animação vertical (para cima e para baixo)
@@ -25,16 +25,17 @@ const iconsVariants = (duration) => ({
 const icons = [
   { Icon: RiReactjsLine, color: "text-cyan-400", duration: 2.5 },
   { Icon: DiJavascript1, color: "text-yellow-300", duration: 3.5 },
-  { Icon: DiNodejsSmall, color: "text-green-500", duration: 5 },
+  { Icon: DiNodejsSmall, color: "text-green-700", duration: 5 },
+  { Icon: SiSpringboot, color: "text-green-400", duration: 4.5 },
   { Icon: DiJava, color: "text-red-900", duration: 2 },
-  { Icon: SiMongodb, color: "text-green-700", duration: 6 },
+  { Icon: SiMongodb, color: "text-green-900", duration: 6 },
   { Icon: DiMysql, color: "text-blue-900", duration: 4 },
   { Icon: DiGit, color: "text-orange-700", duration: 3 },
 ];
 
 const Technologies = () => {
   return (
-    <div className="pb-24">
+    <section id="tec" className="pb-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -62,7 +63,7 @@ const Technologies = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </section>
   );
 };
 

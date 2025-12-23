@@ -1,10 +1,10 @@
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub, FaLink, FaPlay } from "react-icons/fa";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="pb-4">
+    <section id="projects" className="pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -57,6 +57,16 @@ const Projects = () => {
                     <FaLink />
                   </a>
                 )}
+                {project.video && (
+                  <a
+                    href={project.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Video"
+                  >
+                    <FaPlay />
+                  </a>
+                )}
               </div>
               {project.technologies.map((tech, index) => {
                 return (
@@ -72,7 +82,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -28,7 +28,7 @@ const childVariants = {
 const Hero = () => {
   return (
     <div className="pb-4 lg:mb-36">
-      <div className="flex flex-wrap lg:flex-row-reverse lg:px-35 "> 
+      <div className="flex flex-wrap lg:flex-row-reverse lg:px-35 ">
         <div className="w-full lg:w-1/2">
           <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:w-[420px] h-auto aspect-square flex items-center justify-center group mx-auto">
             <div className="w-[370px] h-[370px] rounded-3xl relative overflow-hidden ">
