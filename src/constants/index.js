@@ -67,5 +67,7 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Mogi das Cruzes - SP",
   phoneNo: "+55 11 97999-5695",
+  zapvizual: "+55 11 93077-2138",
+  zap: "5511930772138",
   email: "marcoviniciuscunha@gmail.com",
 };

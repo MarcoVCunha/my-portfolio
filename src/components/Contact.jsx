@@ -1,3 +1,9 @@
+import {
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -13,31 +19,55 @@ const Contact = () => {
         Entre em contato
       </motion.h2>
       <div className="text-center tracking-tighter">
-        <motion.p
+        <motion.a
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+            CONTACT.address
+          )}`}
+          className="my-4 flex items-center justify-center gap-2 text-stone-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {CONTACT.address}
-        </motion.p>
-        <motion.p
+          <FaMapMarkerAlt className="text-2xl text-red-500 transition-colors hover:scale-110" />
+          <span>{CONTACT.address}</span>
+        </motion.a>
+
+        <motion.a
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-4 flex items-center justify-center gap-2 text-stone-300"
         >
-          {CONTACT.phoneNo}
-        </motion.p>
+          <FaPhoneAlt className="text-2xl text-blue-500" />
+          <span>{CONTACT.phoneNo}</span>
+        </motion.a>
+
+        <motion.a
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          href={`https://wa.me/${CONTACT.zap}`}
+          className="my-4 flex items-center justify-center gap-2 text-stone-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="text-3xl text-green-500 transition-colors hover:scale-110" />
+          <span>{CONTACT.zapvizual}</span>
+        </motion.a>
+
         <motion.a
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           href={`https://mail.google.com/mail/?view=cm&to=${CONTACT.email}&su=Assunto&body=Mensagem`}
-          className="border-b "
+          className="my-4 flex items-center justify-center gap-2 text-stone-300"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          {CONTACT.email}
+          <FaEnvelope className="text-2xl text-stone-300 transition-colors hover:scale-110" />
+          <span>{CONTACT.email}</span>
         </motion.a>
       </div>
     </section>
